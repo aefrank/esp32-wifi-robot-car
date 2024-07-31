@@ -6,7 +6,8 @@
       
     ],
     "deps": [
-        ["github:miguelgrinberg/microdot/libs/micropython/asyncio", "latest"]
-    ]
+        ["asyncio", "latest"]
+    ],
+    "version": 0.1.0
   }
   
