@@ -7,7 +7,8 @@
       ["microdot/utemplate.py", "github:miguelgrinberg/microdot/src/microdot/helpers.py"],
       ["utemplate/recompile.py", "github:miguelgrinberg/microdot/libs/common/utemplate/recompile.py"],
       ["utemplate/compiled.py", "github:miguelgrinberg/microdot/libs/common/utemplate/compiled.py"],
-      ["utemplate/source.py", "github:miguelgrinberg/microdot/libs/common/utemplate/source.py"]
+      ["utemplate/source.py", "github:miguelgrinberg/microdot/libs/common/utemplate/source.py"],
+      ["static/css/.py", "github:miguelgrinberg/microdot/libs/common/utemplate/compiled.py"]
     ],
     "deps": [],
     "version": "0.1"
