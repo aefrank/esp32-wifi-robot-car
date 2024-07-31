@@ -3,7 +3,11 @@
       ["microdot/__init__.py",  "github:miguelgrinberg/microdot/src/microdot/__init__.py"],
       ["microdot/microdot.py",  "github:miguelgrinberg/microdot/src/microdot/microdot.py"],
       ["microdot/websocket.py", "github:miguelgrinberg/microdot/src/microdot/websocket.py"],
-      ["microdot/utemplate.py", "github:miguelgrinberg/microdot/src/microdot/utemplate.py"]
+      ["microdot/utemplate.py", "github:miguelgrinberg/microdot/src/microdot/utemplate.py"],
+      ["microdot/utemplate.py", "github:miguelgrinberg/microdot/src/microdot/helpers.py"],
+      ["utemplate/recompile.py", "github:miguelgrinberg/microdot/libs/common/utemplate/recompile.py"],
+      ["utemplate/compiled.py", "github:miguelgrinberg/microdot/libs/common/utemplate/compiled.py"],
+      ["utemplate/source.py", "github:miguelgrinberg/microdot/libs/common/utemplate/source.py"],
     ],
     "deps": [],
     "version": "0.1"
