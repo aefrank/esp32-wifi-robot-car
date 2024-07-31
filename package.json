@@ -1,13 +1,11 @@
 {
     "urls": [
-      ["microdot/__init__.py", "github:miguelgrinberg/microdot/src/microdot/__init__.py"],
-      ["microdot/microdot.py", "github:miguelgrinberg/microdot/src/microdot/microdot.py"],
+      ["microdot/__init__.py",  "github:miguelgrinberg/microdot/src/microdot/__init__.py"],
+      ["microdot/microdot.py",  "github:miguelgrinberg/microdot/src/microdot/microdot.py"],
       ["microdot/utemplate.py", "github:miguelgrinberg/microdot/src/microdot/utemplate.py"]
       
     ],
-    "deps": [
-        ["asyncio", "latest"]
-    ],
+    "deps": [],
     "version": "0.1"
   }
   
