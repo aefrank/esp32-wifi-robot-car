@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Raspberry Pi Pico Wifi Robot Car</title>
+    <title>SummerSpringBot Wifi Controller</title>
     <link
       href="../static/css/entireframework.min.css"
       rel="stylesheet"
@@ -16,15 +16,15 @@
   <body>
     <nav class="nav blue" tabindex="-1" onclick="this.focus()">
       <div class="container">
-        <a class="pagename current" href="https://www.donskytech.com"
-          >www.donskytech.com</a
+        <a class="pagename current" href="https://www.github.com/aefrank/esp32-wifi-robot-car"
+          >SSB 2024</a
         >
       </div>
     </nav>
     <button class="btn-close btn btn-sm">×</button>
     <div class="container">
       <div class="hero">
-        <h2>Raspberry Pi Pico W WiFi Robot Car</h2>
+        <h2>SummerSpringBot<br>Wifi Controller</h2>
       </div>
 
       <div class="row">
@@ -44,15 +44,16 @@
             <input
               class="input-range"
               type="range"
-              step="1"
+              step="10"
               value="{{ current_speed }}"
-              min="1"
+              min="0"
               max="100"
               id="currentSpeed"
             />
+            <span><br></span>
             <span class="speed-value" id="speedValue"
               >{% if current_speed %}{{ current_speed }}{% endif %}</span
-            >
+            ><span class="speed-value">&#37;</span>
           </div>
         </div>
       </div>

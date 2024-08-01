@@ -7,7 +7,7 @@ function onLoad() {
 
 function initializeSocket() {
   console.log(
-    "Opening WebSocket connection to Raspberry Pi Pico W MicroPython Server..."
+    "Opening WebSocket connection to ESP32 MicroPython Server..."
   );
   var targetUrl = `ws://${location.host}/ws`;
   websocket = new WebSocket(targetUrl);
@@ -57,6 +57,15 @@ document.body.addEventListener("click", function (e) {
   if (e.target && e.target.nodeName == "A") {
     e.preventDefault();
   }
+});
+
+// Prevent text selection on D-pad elements
+const noSelectElements = document.querySelectorAll(".d-pad");
+noSelectElements.forEach((element) => {
+            element.style.webkitUserSelect = "none";
+            element.style.mozUserSelect = "none";
+            element.style.msUserSelect = "none";
+            element.style.userSelect = "none";
 });
 
 function touchStartHandler(event) {

@@ -1,21 +1,23 @@
 # boot.py -- run on boot-up
-import network, utime
+import network
+import esp
+esp.osdebug(None)
+import mip
 
-# Replace the following with your WIFI Credentials
-SSID = "<PLACE_YOUR_SSID_HERE>"
-SSI_PASSWORD = "<PLACE_YOUR_WIFI_PASWORD_HERE>"
+SSID = "UCSD-Conferences"
+SSI_PASSWORD = "Conferences2024"
 
 def do_connect():
-    import network
+    # network.WLAN(network.AP_IF).active(False)
     sta_if = network.WLAN(network.STA_IF)
     if not sta_if.isconnected():
-        print('connecting to network...')
+        print(f"Connecting to WiFi network '{SSID}'... ", end='')
         sta_if.active(True)
         sta_if.connect(SSID, SSI_PASSWORD)
         while not sta_if.isconnected():
             pass
-    print('Connected! Network config:', sta_if.ifconfig())
+    print("connected!")
+    print("IP address:", sta_if.ifconfig()[0])
     
-print("Connecting to your wifi...")
 do_connect()
-
+print()
